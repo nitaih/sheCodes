@@ -1,7 +1,10 @@
 import './AddTodo.css';
+import TodoItem from './TodoItem';
 function AddTodo({task, setTask, todos, setTodos}) {
+
     function hadleClick(){
-        setTodos([...todos, task]);
+        if(task.trim() === '') return;
+        setTodos([...todos, {id: Date.now(), text: task, completed: false}]);
         console.log(todos);
     }    return (
         <div>
@@ -14,18 +17,23 @@ function AddTodo({task, setTask, todos, setTodos}) {
             <button className="addButton"
             onClick={hadleClick}
             >Add</button>
-                <ShowList todos={todos}/>   
+                <ShowList todos={todos} handleRemove={handleRemove}/>   
         </div>
-    )}
-function ShowList({todos}) {
+    )
+    function handleRemove(id){
+        setTodos(todos.filter((item) => item.id !== id));
+    }
+}
+function ShowList({todos, handleRemove }) {
+  
     return (
         <div>
             <ul>
-                {todos.map((item, index) => (
-                    <li key={index}>
-                        <input type='checkbox' id={index} />
-                        <label for={index}>{item}</label>
-                        </li>))}
+                {todos.map((item) => (
+                    <li key={item.id} className='todo-item'>
+                        <TodoItem item={item} handleRemove={handleRemove} />
+
+                    </li>))}
             </ul>
         </div>
     )
