@@ -1,0 +1,30 @@
+div{
+    width: 350px;
+    list-style-type: none;
+    padding: 5px;
+    margin: auto;
+    border-radius: 5px;
+    /* display: flex; */
+    justify-content: space-between;
+}
+button {
+    border: none;
+    border-radius: 7px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.allButton {
+    background-color: #2a6dbe; /* Green */
+}
+.activeButton {
+    background-color: #f0be18; /* Red */
+}
+.completedButton {
+    background-color: #4f0460; /* Green */
+}

@@ -1,9 +1,9 @@
 import './AddTodo.css';
-function TodoItem({ item, handleRemove }) {
+function TodoItem({ item, handleRemove, toggleCompleted }) {
     return (
         <div className="todoItem">
-            <div>
-                <input type='checkbox' id={item.id} checked={item.complited} />
+            <div className='itemDetails'>
+                <input type='checkbox' id={item.id} checked={item.completed} onChange={() =>  toggleCompleted(item.id)}/>
                 <label for={item.id}>{item.text}</label>   
             </div>
                         

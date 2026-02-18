@@ -1,5 +1,7 @@
 div{
     margin: 5px;
+    /* display: flex; */
+    justify-content: left;
 }
 .addButton {
     background-color: #4CAF50; /* Green */
@@ -35,6 +37,10 @@ div{
     border: 1px solid #ccc;
 } 
 
+ul{
+    padding: 0;
+    margin: 0;
+}
  
 li {
     width: 350px;
@@ -43,7 +49,7 @@ li {
     margin: auto;
     border-radius: 5px;
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
 }
 .todoItem {
     width: 350px;
@@ -52,4 +58,8 @@ li {
     margin: auto;
     display: flex;
     justify-content: space-between;
+}
+.itemDetails {
+    display: flex;
+    justify-content: left;
 }
