@@ -6,12 +6,13 @@ import FilterToolbar from "./FilterToolbar";
 function TodoApp() {
 
     const [task, setTask] = useState("");
+    const [date, setDate] = useState("");
     const [todos, setTodos] = useState([]);
     const [filter, setFilter] = useState("all");
 
     function hadleClick(){
         if(task.trim() === '') return;
-        setTodos([...todos, {id: Date.now(), text: task, completed: false}]);
+        setTodos([...todos, {id: Date.now(), text: task, date: date, completed: false}]);
         console.log(todos);
     } 
     function handleRemove(id){
@@ -29,6 +30,8 @@ function TodoApp() {
             <Title />
             <AddTodo task={task} 
             setTask={setTask}
+            date={date}
+            setDate={setDate}
             hadleClick={hadleClick}/>
             <FilterToolbar setFilter={setFilter}/>
             <ShowList todos={todos} 

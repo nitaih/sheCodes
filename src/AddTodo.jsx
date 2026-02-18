@@ -1,12 +1,7 @@
 import './AddTodo.css';
 
-function AddTodo({task, setTask, hadleClick}) {
-
-    // function hadleClick(){
-    //     if(task.trim() === '') return;
-    //     setTodos([...todos, {id: Date.now(), text: task, completed: false}]);
-    //     console.log(todos);
-    // }    
+function AddTodo({task, setTask, date, setDate, hadleClick}) {
+   
     return (
         <div>
             <input 
@@ -15,6 +10,10 @@ function AddTodo({task, setTask, hadleClick}) {
                 type="text" 
                 placeholder="Add new task"
                 onChange={(e) => setTask(e.target.value)} />
+            <input className='dateInput'
+            type="date"
+            value={date}
+            onChange={(e) => setDate(e.target.value)} />
             <button className="addButton"
             onClick={hadleClick}
             >Add</button>

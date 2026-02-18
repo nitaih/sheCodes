@@ -36,6 +36,13 @@ div{
     border-radius: 7px;
     border: 1px solid #ccc;
 } 
+.dateInput {
+    margin: 2px;
+    padding: 10px;
+    width: 100px;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+}
 
 ul{
     padding: 0;
@@ -43,7 +50,7 @@ ul{
 }
  
 li {
-    width: 350px;
+    width: 450px;
     list-style-type: none;
     padding: 5px;
     margin: auto;
@@ -52,7 +59,7 @@ li {
     justify-content: left;
 }
 .todoItem {
-    width: 350px;
+    width: 450px;
     border-radius: 7px;
     background-color: rgb(240, 238, 238);
     margin: auto;
@@ -62,4 +69,10 @@ li {
 .itemDetails {
     display: flex;
     justify-content: left;
+}
+.dateItem {
+    margin-left: 10px;
+    color: #888;
+    font-size: 12px;
+    white-space: nowrap;
 }
