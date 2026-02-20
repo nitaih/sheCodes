@@ -9,11 +9,13 @@ function TodoApp() {
     const [date, setDate] = useState("");
     const [todos, setTodos] = useState([]);
     const [filter, setFilter] = useState("all");
+    const [confirmRemove, setConfirmRemove] = useState(null);
 
-    function hadleClick(){
+    function handleClick(){
         if(task.trim() === '') return;
         setTodos([...todos, {id: Date.now(), text: task, date: date, completed: false}]);
         console.log(todos);
+        setConfirmRemove(null); 
     } 
     function handleRemove(id){
         setTodos(todos.filter((item) => item.id !== id));
@@ -32,12 +34,17 @@ function TodoApp() {
             setTask={setTask}
             date={date}
             setDate={setDate}
-            hadleClick={hadleClick}/>
+            handleClick={handleClick}
+            setConfirmRemove={setConfirmRemove}
+            />
             <FilterToolbar setFilter={setFilter}/>
             <ShowList todos={todos} 
             handleRemove={handleRemove} 
             toggleCompleted={toggleCompleted}
-            filter={filter}/>
+            filter={filter}
+            confirmRemove={confirmRemove}
+            setConfirmRemove={setConfirmRemove}
+            />
         </div>
     )
 }

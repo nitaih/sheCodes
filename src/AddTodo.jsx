@@ -1,9 +1,20 @@
 import './AddTodo.css';
 
-function AddTodo({task, setTask, date, setDate, hadleClick}) {
+function AddTodo({task, setTask, date, setDate, handleClick, setConfirmRemove}) {
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        handleClick();
+    };
+    const handleKeyDown = (e) => {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            handleClick();
+        }
+    }
    
     return (
-        <div>
+        <form onSubmit={handleSubmit}>
             <input 
                 className="inputField"
                 value={task} 
@@ -13,12 +24,13 @@ function AddTodo({task, setTask, date, setDate, hadleClick}) {
             <input className='dateInput'
             type="date"
             value={date}
-            onChange={(e) => setDate(e.target.value)} />
+            onChange={(e) => setDate(e.target.value)}
+            onKeyDown={handleKeyDown} />
             <button className="addButton"
-            onClick={hadleClick}
+            type='submit'
             >Add</button>
 
-        </div>
+        </form>
     )
 }
 
