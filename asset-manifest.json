@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/priotrix-matrix-todo/static/css/main.27884e8d.css",
+    "main.js": "/priotrix-matrix-todo/static/js/main.968a9acc.js",
+    "static/js/453.37b40076.chunk.js": "/priotrix-matrix-todo/static/js/453.37b40076.chunk.js",
+    "index.html": "/priotrix-matrix-todo/index.html",
+    "main.27884e8d.css.map": "/priotrix-matrix-todo/static/css/main.27884e8d.css.map",
+    "main.968a9acc.js.map": "/priotrix-matrix-todo/static/js/main.968a9acc.js.map",
+    "453.37b40076.chunk.js.map": "/priotrix-matrix-todo/static/js/453.37b40076.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.27884e8d.css",
+    "static/js/main.968a9acc.js"
+  ]
+}
