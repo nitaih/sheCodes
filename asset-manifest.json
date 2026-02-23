@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/priotrix-matrix-todo/static/css/main.27884e8d.css",
-    "main.js": "/priotrix-matrix-todo/static/js/main.968a9acc.js",
-    "static/js/453.37b40076.chunk.js": "/priotrix-matrix-todo/static/js/453.37b40076.chunk.js",
-    "index.html": "/priotrix-matrix-todo/index.html",
-    "main.27884e8d.css.map": "/priotrix-matrix-todo/static/css/main.27884e8d.css.map",
-    "main.968a9acc.js.map": "/priotrix-matrix-todo/static/js/main.968a9acc.js.map",
-    "453.37b40076.chunk.js.map": "/priotrix-matrix-todo/static/js/453.37b40076.chunk.js.map"
+    "main.css": "/sheCodes/static/css/main.27884e8d.css",
+    "main.js": "/sheCodes/static/js/main.f6eaa6aa.js",
+    "static/js/453.37b40076.chunk.js": "/sheCodes/static/js/453.37b40076.chunk.js",
+    "index.html": "/sheCodes/index.html",
+    "main.27884e8d.css.map": "/sheCodes/static/css/main.27884e8d.css.map",
+    "main.f6eaa6aa.js.map": "/sheCodes/static/js/main.f6eaa6aa.js.map",
+    "453.37b40076.chunk.js.map": "/sheCodes/static/js/453.37b40076.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.27884e8d.css",
-    "static/js/main.968a9acc.js"
+    "static/js/main.f6eaa6aa.js"
   ]
 }
