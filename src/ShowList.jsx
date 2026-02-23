@@ -1,5 +1,6 @@
 import TodoItem from './TodoItem';
-function ShowList({todos, handleRemove, toggleCompleted, filter, confirmRemove, setConfirmRemove}) {
+function ShowList({todos, handleRemove, toggleCompleted, filter, confirmRemove, setConfirmRemove,sortByKey, sortBy}) {
+    todos.sort(sortByKey(sortBy));
     const filteredTodos = todos.filter((item) => {
         if (filter === "active") return !item.completed;
         if (filter === "completed") return item.completed;

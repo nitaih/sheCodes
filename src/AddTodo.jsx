@@ -1,6 +1,6 @@
 import './AddTodo.css';
 
-function AddTodo({task, setTask, date, setDate, handleClick, setConfirmRemove}) {
+function AddTodo({task, setTask, date, setDate, handleClick,setPriority}) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -21,7 +21,14 @@ function AddTodo({task, setTask, date, setDate, handleClick, setConfirmRemove}) 
                 type="text" 
                 placeholder="Add new task"
                 onChange={(e) => setTask(e.target.value)} />
-            <input className='dateInput'
+            <select className="dateInput" onChange={(e) => setPriority(e.target.value)}>
+                <option value="">Priority</option>
+                <option value="High">High</option>
+                <option value="Low">Low</option>
+                <option value="None">None</option>
+            </select>
+            <input 
+            className="dateInput"
             type="date"
             value={date}
             onChange={(e) => setDate(e.target.value)}

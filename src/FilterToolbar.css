@@ -28,3 +28,9 @@ button {
 .completedButton {
     background-color: #4f0460; /* Green */
 }
+.dateItem {
+    margin-left: 10px;
+    color: #888;
+    font-size: 12px;
+    white-space: nowrap;
+}

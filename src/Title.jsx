@@ -4,6 +4,7 @@ const TitleStyled = styled.div`
     background-color: #6200ea;
     color: white;
     font-size: 1.5em;
+    width: 500px;
     padding: 15px;`
 function Title() {
     return (

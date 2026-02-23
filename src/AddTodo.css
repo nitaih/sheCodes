@@ -8,7 +8,7 @@ div{
     border: none;
     border-radius: 7px;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -17,7 +17,7 @@ div{
     cursor: pointer;
 }
 .removeButton {
-    background-color: #f44336; /* Red */
+    background-color: #292828; /* Red */
     border: none;
     margin: 5px;
     border-radius: 7px;
@@ -47,25 +47,26 @@ div{
 } 
 .inputField {
     padding: 10px;
-    width: 200px;
+    width: 170px;
     border-radius: 7px;
     border: 1px solid #ccc;
 } 
 .dateInput {
     margin: 2px;
     padding: 10px;
-    width: 100px;
+    width: 80px;
     border-radius: 7px;
     border: 1px solid #ccc;
 }
 
 ul{
+    width: 500px;
     padding: 0;
     margin: 0;
 }
  
 li {
-    width: 450px;
+    width: 500px;
     list-style-type: none;
     padding: 5px;
     margin: auto;
@@ -74,7 +75,7 @@ li {
     justify-content: left;
 }
 .todoItem {
-    width: 450px;
+    width: 500px;
     border-radius: 7px;
     background-color: rgb(240, 238, 238);
     margin: auto;
